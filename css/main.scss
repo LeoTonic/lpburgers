@@ -1,4 +1,59 @@
 @import 'scss_modules/normalize';
+@import 'scss_modules/fonts';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	line-height: 1.42;
+	position: relative;
+	font-family: 'ubuntu';
+	font-weight: 100;
+	color: #2f3234;
+}
+
+// section styles
+.block-section {
+	height: 100vh;
+	min-height: 650px;
+	position: relative;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.wrapper {
+	min-width: 960px;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+	&:after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+}
+
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	background: #e45028;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: 600;
+}
 
 @import 'scss_modules/01-first-screen';
 @import 'scss_modules/02-we';
@@ -7,17 +62,3 @@
 @import 'scss_modules/05-menu';
 @import 'scss_modules/06-review';
 @import 'scss_modules/07-form';
-
-// section styles
-.block-section {
-	height: 100vh;
-	min-height: 650px;
-
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-}
-
-.wrapper {
-	min-width: 940px;
-}

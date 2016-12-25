@@ -1,0 +1,30 @@
+@mixin set-font($family, $type-name, $weight) {
+  font-family: '#{$family}';
+    src: url('../fonts/#{$family}-#{$type-name}.woff') format('woff');
+    font-weight: $weight;
+    font-style: normal;	
+}
+
+@font-face {
+	@include set-font(ubuntu, light, 100);
+}
+
+@font-face {
+	@include set-font(ubuntu, regular, 400);
+}
+
+@font-face {
+	@include set-font(ubuntu, medium, 600);
+}
+
+@font-face {
+	@include set-font(ubuntu, bold, 900);
+}
+
+@font-face {
+	@include set-font(lifehack, medium, 400);
+}
+
+@font-face {
+	@include set-font(gagalin, regular, 400);
+}

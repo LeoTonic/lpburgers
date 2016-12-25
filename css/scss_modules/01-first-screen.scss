@@ -1,3 +1,141 @@
 .page01 {
 	background-image: url('../img/01-first-screen/bg.jpg');
+
+	.container {
+		position: static;
+	}
+}
+
+.header {
+	font-size: 0;
+	padding-top: 12px;
+	&--logo {
+		float: left;
+		width: 32%;
+	}
+	&--menu {
+		float: left;
+		width: 68%;
+		padding-top: 13px;
+	}
+}
+
+.nav {
+	width: 83%;
+	display: inline-block;
+	vertical-align: middle;
+
+	&--list {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		list-style: none;
+		&:after {
+			clear: both;
+		}
+		&:before {
+			content: "";
+			display: table;
+		}
+	}
+	&--item {
+		list-style: none;
+		white-space: nowrap;
+		margin-right: 15px;
+		display: block;
+		float: left;
+		&:after {
+			content: "";
+			display: inline-block;
+			vertical-align: middle;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background: #fff;
+			margin-left: 15px;
+		}
+		&:last-child {
+			margin-right: 0;
+			&:after {
+				content: "";
+				display: table;
+				width: 0;
+				height: 0;
+				margin-left: 0;
+			}
+		}
+	}
+
+	&--link {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 13px;
+		text-transform: uppercase;
+		color: #fff;
+		text-decoration: none;
+		font-weight: 600;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.order-link {
+	width: 15%;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 9px 0;
+	margin-left: 2%;
+}
+
+.page01-content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+
+	&--left {
+		width: 50%;
+		float: left;
+	}
+	&--img {
+		display: inline-block;
+		max-width: 100%;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&--right {
+		float: left;
+		width: 50%;
+		padding-top: 115px;
+	}
+
+	&--title {
+		color: #f9b43b;
+		font-size: 72px;
+		font-family: 'gagalin';
+		font-weight: 400;
+		margin-bottom: 12px;
+	}
+	&--desc {
+		font-size: 65px;
+		color: #fff;
+		font-family: 'lifehack';
+		font-weight: 400;
+		text-transform: lowercase;
+		line-height: 1em;
+	}
+}
+
+.down-arrow {
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	width: 60px;
+	margin-left: -15px;
+	transition: .3s;
+	height: 60px;
 }
