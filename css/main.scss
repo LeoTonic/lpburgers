@@ -1,0 +1,23 @@
+@import 'scss_modules/normalize';
+
+@import 'scss_modules/01-first-screen';
+@import 'scss_modules/02-we';
+@import 'scss_modules/03-burgers';
+@import 'scss_modules/04-team';
+@import 'scss_modules/05-menu';
+@import 'scss_modules/06-review';
+@import 'scss_modules/07-form';
+
+// section styles
+.block-section {
+	height: 100vh;
+	min-height: 650px;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.wrapper {
+	min-width: 940px;
+}
