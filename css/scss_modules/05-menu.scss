@@ -1,3 +1,70 @@
 .menu {
 	background-image: url('../img/05-menu/bg.jpg');
 }
+
+.menu-acco {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	&:after {
+		@extend .clearfix;
+	}
+
+	&--item {
+		float: left;
+		height: 100%;
+		&:after {
+			@extend .clearfix;
+		}
+
+		&-active {
+			.menu-acco--trigger-text {
+				color: $yellow;
+			}
+			.menu-acco--content {
+				width: 550px;
+			}
+		}
+	}
+
+	&--trigger {
+		height: 100%;
+		display: block;
+		width: 80px;
+		float: left;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		position: relative;
+	}
+
+	&--trigger-text {
+		font-family: gagalin;
+		font-size: 40px;
+		position: absolute;
+		top: 50%;
+		height: 80px;
+		margin-top: -40px;
+		white-space: nowrap;
+		width: 650px;
+		color: $white;
+		left: 50%;
+		margin-left: -312px;
+		transform: rotate(-90deg);
+		text-align: center;
+	}
+
+	&--content {
+		background: rgba(47, 50, 52, 0.93);
+		float: left;
+		height: 100%;
+		color: $white;
+		overflow: hidden;
+		width: 0;
+	}
+	&--text {
+		width: 550px;
+		padding: 20px;
+	}
+}
