@@ -37,8 +37,8 @@
 		}
 	}
 	&--item-active {
-		.team-acco--content {
-			display: block;
+		.team-acco--popup {
+			height: auto;
 		}
 		.team-acco--trigger {
 			color: $yellow;
@@ -47,12 +47,18 @@
 			}
 		}
 	}
+	&--popup {
+		display: block;
+		height: 0;
+		overflow: hidden;
+		transition: .3s;
+	}
+
 	&--content {
 		&:after {
 			@extend .clearfix;
 		}
 		padding-top: 14px;
-		display: none;
 	}
 
 	&--pic {

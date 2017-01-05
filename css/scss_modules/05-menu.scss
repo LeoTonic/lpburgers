@@ -23,7 +23,7 @@
 				color: $yellow;
 			}
 			.menu-acco--content {
-				width: 550px;
+				width: auto;
 			}
 		}
 	}
@@ -62,6 +62,7 @@
 		color: $white;
 		overflow: hidden;
 		width: 0;
+		transition: .3s;
 	}
 	&--text {
 		width: 550px;
