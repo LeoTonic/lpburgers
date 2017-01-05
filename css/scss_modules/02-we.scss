@@ -1,3 +1,55 @@
-.page02 {
+.we {
 	background-image: url('../img/02-we/bg.jpg');
+	text-align: center;
+	.section--title {
+		margin-bottom: 80px;
+	}
+
+	.container {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.best {	
+	&--list {
+		font-size: 0;
+	}
+	* {
+		font-size: 14px;
+	}
+
+	&--item {
+		display: inline-block;
+		vertical-align: top;
+		width: 33.3%;
+	}
+
+	&--icon {
+		height: 100px;
+		width: 100px;
+		position: relative;
+		display: inline-block;
+		img {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&--title {
+		font-size: 24px;
+		font-family: lifehack;
+		font-weight: 400;
+		color: $black;
+		margin-bottom: 20px;
+	}
+}
+
+.text-block {
+	p {
+		font-size: 14px;
+		line-height: 1.8;
+	}
 }

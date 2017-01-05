@@ -1,3 +1,77 @@
-.page04 {
+.team {
 	background-image: url('../img/04-team/bg.jpg');
+}
+
+.team--section {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 50%;
+	background: rgba($black, .93);
+	padding: 0 95px 0 75px;
+}
+
+.team-acco {
+	&--trigger {
+		color: $white;
+		font-size: 14px;
+		font-family: gagalin;
+		font-weight: 400;
+		text-decoration: none;
+		position: relative;
+		display: block;
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: -19px;
+			top: 8px;
+			height: 0;
+			border-top: 7px solid $yellow;
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-bottom: 0px solid transparent;
+			transform: rotate(0deg);
+			transition: .3s;
+		}
+	}
+	&--item-active {
+		.team-acco--content {
+			display: block;
+		}
+		.team-acco--trigger {
+			color: $yellow;
+			&:before {
+				transform: rotate(-180deg);
+			}
+		}
+	}
+	&--content {
+		&:after {
+			@extend .clearfix;
+		}
+		padding-top: 14px;
+		display: none;
+	}
+
+	&--pic {
+		float: left;
+		text-align: center;
+		width: 30%;
+		img {
+			border-radius: 50%;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+
+	&--title {
+		color: $white;
+		font-weight: 600;
+		margin-bottom: 16px;
+	}
+	&--text-content {
+		color: $white;
+	}
 }
