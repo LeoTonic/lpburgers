@@ -5,12 +5,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width">
 	<title>Главная страница</title>
+	<link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<div class="wrapper">
 		<div class="maincontent">
-			<section class="section hero">
+			<section class="section hero active">
 				<!--first screen-->
 				<div class="container">
 					<!--header menu-->
@@ -24,26 +26,26 @@
 							<nav class="nav">
 								<ul class="nav--list">
 									<li class="nav--item">
-										<a href="#" class="nav--link">о нас</a>
+										<a href="1" class="nav--link">о нас</a>
 									</li>
 									<li class="nav--item">
-										<a href="#" class="nav--link">бургеры</a>
+										<a href="2" class="nav--link">бургеры</a>
 									</li>
 									<li class="nav--item">
-										<a href="#" class="nav--link">команда</a>
+										<a href="3" class="nav--link">команда</a>
 									</li>
 									<li class="nav--item">
-										<a href="#" class="nav--link">меню</a>
+										<a href="4" class="nav--link">меню</a>
 									</li>
 									<li class="nav--item">
-										<a href="#" class="nav--link">отзывы</a>
+										<a href="5" class="nav--link">отзывы</a>
 									</li>
 									<li class="nav--item">
-										<a href="#" class="nav--link">контакты</a>
+										<a href="7" class="nav--link">контакты</a>
 									</li>
 								</ul>
 							</nav>
-							<a href="#" class="order-link btn">заказать</a>
+							<a href="6" class="order-link btn">заказать</a>
 						</div>
 					</header>
 					<!--content-block-->
@@ -98,6 +100,292 @@
 			</section>
 			<section class="section burgers">
 				<!--burgers-->
+				<div class="burgers--container">
+					<div class="container">
+						<div class="burger-slider">
+							<div class="burger-slider--controls">
+								<a class="burger-slider--btn burger-slider--btn-next" href="#"><img src="img/svg/arrow-scroll.svg" alt=""></a>
+								<a class="burger-slider--btn burger-slider--btn-prev" href="#"><img src="img/svg/arrow-scroll.svg" alt=""></a>
+							</div>
+							<div class="burger-slider--container">
+								<ul class="burger-slider--list owl-carousel">
+									<li class="burger-slider--item">
+										<div class="burger-slider--ingredients">
+											<div class="burger-slider--ingredients-icon">
+												<div class="burger-slider--ingredients-icon-pic"><img src="img/svg/burger.svg" alt="burger"></div>
+												<div class="burger-slider--ingredients-icon-text">Состав</div>
+											</div>
+											<div class="burger-slider--ingredients-popup">
+												<table class="ingredients--table">
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/beef.svg"></td>
+														<td class="ingredients--table-cell">Говядина</td>
+														<td class="ingredients--table-cell">300г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/buns.svg"></td>
+														<td class="ingredients--table-cell">Булочки</td>
+														<td class="ingredients--table-cell">100г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/salad.svg"></td>
+														<td class="ingredients--table-cell">Зелень</td>
+														<td class="ingredients--table-cell">70г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/sauce.svg"></td>
+														<td class="ingredients--table-cell">Соус</td>
+														<td class="ingredients--table-cell">150г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/cucumber.svg"></td>
+														<td class="ingredients--table-cell">Овощи</td>
+														<td class="ingredients--table-cell">200г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/cheese.svg"></td>
+														<td class="ingredients--table-cell">Сыр</td>
+														<td class="ingredients--table-cell">60г</td>
+													</tr>
+												</table>
+											</div>
+										</div>
+										<div class="burger-slider--weight">
+											<div class="burger-slider--weight-measure">
+												<div class="burger-slider--weight-amount">1200</div>
+											</div>
+											<div class="burger-slider--weight-title">ккал</div>
+										</div>
+										<div class="burger-slider--left">
+											<img src="img/03-burgers/burger-black.png" alt="black burger">
+										</div>
+										<div class="burger-slider--right">
+											<div class="section--title section--title-white">Dark Beef Burger</div>
+											<div class="burger-slider--text">
+												<p class="text-block">
+													Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя
+													кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и
+													соусом гриль теперь с добавлением экзотического соуса чураско.
+												</p>
+											</div>
+											<div class="burger-slider--options">
+												<div class="burger-slider--price">
+													<div class="burger-slider--price-amount">500</div>
+													<div class="burger-slider--price-measure">рублей</div>
+												</div>
+												<a href="6" class="burger-slider--buy btn">Заказать</a>
+											</div>
+										</div>
+									</li>
+									<li class="burger-slider--item">
+										<div class="burger-slider--ingredients">
+											<div class="burger-slider--ingredients-icon">
+												<div class="burger-slider--ingredients-icon-pic"><img src="img/svg/burger.svg" alt="burger"></div>
+												<div class="burger-slider--ingredients-icon-text">Состав</div>
+											</div>
+											<div class="burger-slider--ingredients-popup">
+												<table class="ingredients--table">
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/beef.svg"></td>
+														<td class="ingredients--table-cell">Говядина</td>
+														<td class="ingredients--table-cell">300г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/buns.svg"></td>
+														<td class="ingredients--table-cell">Булочки</td>
+														<td class="ingredients--table-cell">100г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/salad.svg"></td>
+														<td class="ingredients--table-cell">Зелень</td>
+														<td class="ingredients--table-cell">70г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/sauce.svg"></td>
+														<td class="ingredients--table-cell">Соус</td>
+														<td class="ingredients--table-cell">150г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/cucumber.svg"></td>
+														<td class="ingredients--table-cell">Овощи</td>
+														<td class="ingredients--table-cell">200г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/cheese.svg"></td>
+														<td class="ingredients--table-cell">Сыр</td>
+														<td class="ingredients--table-cell">60г</td>
+													</tr>
+												</table>
+											</div>
+										</div>
+										<div class="burger-slider--weight">
+											<div class="burger-slider--weight-measure">
+												<div class="burger-slider--weight-amount">800</div>
+											</div>
+											<div class="burger-slider--weight-title">ккал</div>
+										</div>
+										<div class="burger-slider--left">
+											<img src="img/03-burgers/burger-cheeseburger.png" alt="cheeseburger">
+										</div>
+										<div class="burger-slider--right">
+											<div class="section--title section--title-white">Classic Cheeseburger</div>
+											<div class="burger-slider--text">
+												<p class="text-block">
+													Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя
+													кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и
+													соусом гриль теперь с добавлением экзотического соуса чураско.
+												</p>
+											</div>
+											<div class="burger-slider--options">
+												<div class="burger-slider--price">
+													<div class="burger-slider--price-amount">270</div>
+													<div class="burger-slider--price-measure">рублей</div>
+												</div>
+												<a href="6" class="burger-slider--buy btn">Заказать</a>
+											</div>
+										</div>
+									</li>
+									<li class="burger-slider--item">
+										<div class="burger-slider--ingredients">
+											<div class="burger-slider--ingredients-icon">
+												<div class="burger-slider--ingredients-icon-pic"><img src="img/svg/burger.svg" alt="burger"></div>
+												<div class="burger-slider--ingredients-icon-text">Состав</div>
+											</div>
+											<div class="burger-slider--ingredients-popup">
+												<table class="ingredients--table">
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/beef.svg"></td>
+														<td class="ingredients--table-cell">Говядина</td>
+														<td class="ingredients--table-cell">300г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/buns.svg"></td>
+														<td class="ingredients--table-cell">Булочки</td>
+														<td class="ingredients--table-cell">100г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/salad.svg"></td>
+														<td class="ingredients--table-cell">Зелень</td>
+														<td class="ingredients--table-cell">70г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/sauce.svg"></td>
+														<td class="ingredients--table-cell">Соус</td>
+														<td class="ingredients--table-cell">150г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/cucumber.svg"></td>
+														<td class="ingredients--table-cell">Овощи</td>
+														<td class="ingredients--table-cell">200г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/cheese.svg"></td>
+														<td class="ingredients--table-cell">Сыр</td>
+														<td class="ingredients--table-cell">60г</td>
+													</tr>
+												</table>
+											</div>
+										</div>
+										<div class="burger-slider--weight">
+											<div class="burger-slider--weight-measure">
+												<div class="burger-slider--weight-amount">600</div>
+											</div>
+											<div class="burger-slider--weight-title">ккал</div>
+										</div>
+										<div class="burger-slider--left">
+											<img src="img/03-burgers/burger-chicken.png" alt="chicken burger">
+										</div>
+										<div class="burger-slider--right">
+											<div class="section--title section--title-white">Chickenburger Ladispola</div>
+											<div class="burger-slider--text">
+												<p class="text-block">
+													Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя
+													кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и
+													соусом гриль теперь с добавлением экзотического соуса чураско.
+												</p>
+											</div>
+											<div class="burger-slider--options">
+												<div class="burger-slider--price">
+													<div class="burger-slider--price-amount">220</div>
+													<div class="burger-slider--price-measure">рублей</div>
+												</div>
+												<a href="6" class="burger-slider--buy btn">Заказать</a>
+											</div>
+										</div>
+									</li>
+									<li class="burger-slider--item">
+										<div class="burger-slider--ingredients">
+											<div class="burger-slider--ingredients-icon">
+												<div class="burger-slider--ingredients-icon-pic"><img src="img/svg/burger.svg" alt="burger"></div>
+												<div class="burger-slider--ingredients-icon-text">Состав</div>
+											</div>
+											<div class="burger-slider--ingredients-popup">
+												<table class="ingredients--table">
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/beef.svg"></td>
+														<td class="ingredients--table-cell">Говядина</td>
+														<td class="ingredients--table-cell">300г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/buns.svg"></td>
+														<td class="ingredients--table-cell">Булочки</td>
+														<td class="ingredients--table-cell">100г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/salad.svg"></td>
+														<td class="ingredients--table-cell">Зелень</td>
+														<td class="ingredients--table-cell">70г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/sauce.svg"></td>
+														<td class="ingredients--table-cell">Соус</td>
+														<td class="ingredients--table-cell">150г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/cucumber.svg"></td>
+														<td class="ingredients--table-cell">Овощи</td>
+														<td class="ingredients--table-cell">200г</td>
+													</tr>
+													<tr class="ingredients--table-row">
+														<td class="ingredients--table-cell"><img src="img/svg/cheese.svg"></td>
+														<td class="ingredients--table-cell">Сыр</td>
+														<td class="ingredients--table-cell">60г</td>
+													</tr>
+												</table>
+											</div>
+										</div>
+										<div class="burger-slider--weight">
+											<div class="burger-slider--weight-measure">
+												<div class="burger-slider--weight-amount">500</div>
+											</div>
+											<div class="burger-slider--weight-title">ккал</div>
+										</div>
+										<div class="burger-slider--left">
+											<img src="img/03-burgers/burger-sw.png" alt="sw burger">
+										</div>
+										<div class="burger-slider--right">
+											<div class="section--title section--title-white">Burger SW</div>
+											<div class="burger-slider--text">
+												<p class="text-block">
+													Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя
+													кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и
+													соусом гриль теперь с добавлением экзотического соуса чураско.
+												</p>
+											</div>
+											<div class="burger-slider--options">
+												<div class="burger-slider--price">
+													<div class="burger-slider--price-amount">180</div>
+													<div class="burger-slider--price-measure">рублей</div>
+												</div>
+												<a href="6" class="burger-slider--buy btn">Заказать</a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 			<section class="section team">
 				<!--team-->
@@ -126,7 +414,7 @@
 										<img src="img/04-team/person-01.jpg" alt="person">
 									</div>
 									<div class="team-acco--text">
-										<div class="team-acco--title">Шеф-повар</div>
+										<div class="team-acco--title">Оператор</div>
 										<div class="team-acco--text-content">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
 									</div>
 								</div>
@@ -140,7 +428,7 @@
 										<img src="img/04-team/person-01.jpg" alt="person">
 									</div>
 									<div class="team-acco--text">
-										<div class="team-acco--title">Шеф-повар</div>
+										<div class="team-acco--title">Менеджер</div>
 										<div class="team-acco--text-content">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
 									</div>
 								</div>
@@ -154,7 +442,7 @@
 										<img src="img/04-team/person-01.jpg" alt="person">
 									</div>
 									<div class="team-acco--text">
-										<div class="team-acco--title">Шеф-повар</div>
+										<div class="team-acco--title">Помощник менеджера</div>
 										<div class="team-acco--text-content">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
 									</div>
 								</div>
@@ -174,7 +462,7 @@
 						</a>
 						<div class="menu-acco--content">
 							<div class="menu-acco--text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptas distinctio praesentium quos sunt sint dolorum quisquam quidem placeat, veniam sequi consectetur delectus necessitatibus, quasi eum veritatis ipsam. Veritatis incidunt asperiores, reiciendis. Debitis esse consectetur vel, neque, impedit quam sapiente quia sunt culpa incidunt, explicabo tenetur. Facere consequatur libero blanditiis molestiae, saepe dicta deserunt repudiandae commodi non velit amet culpa fugiat, ullam vero, recusandae. Eaque porro similique quod ad consequatur velit ab suscipit. Mollitia nam perspiciatis architecto nemo deserunt, recusandae, ipsa, tenetur tempore earum optio eius. Possimus cupiditate maxime quibusdam nisi deleniti error ab similique. Fuga, accusantium obcaecati nobis alias.
+								Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
 							</div>
 						</div>
 					</li>
@@ -186,7 +474,7 @@
 						</a>
 						<div class="menu-acco--content">
 							<div class="menu-acco--text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptas distinctio praesentium quos sunt sint dolorum quisquam quidem placeat, veniam sequi consectetur delectus necessitatibus, quasi eum veritatis ipsam. Veritatis incidunt asperiores, reiciendis. Debitis esse consectetur vel, neque, impedit quam sapiente quia sunt culpa incidunt, explicabo tenetur. Facere consequatur libero blanditiis molestiae, saepe dicta deserunt repudiandae commodi non velit amet culpa fugiat, ullam vero, recusandae. Eaque porro similique quod ad consequatur velit ab suscipit. Mollitia nam perspiciatis architecto nemo deserunt, recusandae, ipsa, tenetur tempore earum optio eius. Possimus cupiditate maxime quibusdam nisi deleniti error ab similique. Fuga, accusantium obcaecati nobis alias.
+								Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
 							</div>
 						</div>
 					</li>
@@ -198,7 +486,7 @@
 						</a>
 						<div class="menu-acco--content">
 							<div class="menu-acco--text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptas distinctio praesentium quos sunt sint dolorum quisquam quidem placeat, veniam sequi consectetur delectus necessitatibus, quasi eum veritatis ipsam. Veritatis incidunt asperiores, reiciendis. Debitis esse consectetur vel, neque, impedit quam sapiente quia sunt culpa incidunt, explicabo tenetur. Facere consequatur libero blanditiis molestiae, saepe dicta deserunt repudiandae commodi non velit amet culpa fugiat, ullam vero, recusandae. Eaque porro similique quod ad consequatur velit ab suscipit. Mollitia nam perspiciatis architecto nemo deserunt, recusandae, ipsa, tenetur tempore earum optio eius. Possimus cupiditate maxime quibusdam nisi deleniti error ab similique. Fuga, accusantium obcaecati nobis alias.
+								Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
 							</div>
 						</div>
 					</li>
@@ -214,7 +502,7 @@
 								<div class="review--title">Валор Дукалис</div>
 								<div class="review--shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 								<div class="review--button-wrap">
-									<a href="#" class="review--view">Подробнее</a>
+									<a href="#full-review" class="review--view">Подробнее</a>
 								</div>
 							</div>
 						</div>
@@ -226,7 +514,7 @@
 								<div class="review--title">Валор Дукалис</div>
 								<div class="review--shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 								<div class="review--button-wrap">
-									<a href="#" class="review--view">Подробнее</a>
+									<a href="#full-review" class="review--view">Подробнее</a>
 								</div>
 							</div>
 						</div>
@@ -238,7 +526,7 @@
 								<div class="review--title">Валор Дукалис</div>
 								<div class="review--shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 								<div class="review--button-wrap">
-									<a href="#" class="review--view">Подробнее</a>
+									<a href="#full-review" class="review--view">Подробнее</a>
 								</div>
 							</div>
 						</div>
@@ -250,7 +538,7 @@
 								<div class="review--title">Валор Дукалис</div>
 								<div class="review--shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 								<div class="review--button-wrap">
-									<a href="#" class="review--view">Подробнее</a>
+									<a href="#full-review" class="review--view">Подробнее</a>
 								</div>
 							</div>
 						</div>
@@ -262,7 +550,7 @@
 								<div class="review--title">Валор Дукалис</div>
 								<div class="review--shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 								<div class="review--button-wrap">
-									<a href="#" class="review--view">Подробнее</a>
+									<a href="#full-review" class="review--view">Подробнее</a>
 								</div>
 							</div>
 						</div>
@@ -274,7 +562,7 @@
 								<div class="review--title">Валор Дукалис</div>
 								<div class="review--shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 								<div class="review--button-wrap">
-									<a href="#" class="review--view">Подробнее</a>
+									<a href="#full-review" class="review--view">Подробнее</a>
 								</div>
 							</div>
 						</div>
@@ -286,7 +574,7 @@
 								<div class="review--title">Валор Дукалис</div>
 								<div class="review--shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 								<div class="review--button-wrap">
-									<a href="#" class="review--view">Подробнее</a>
+									<a href="#full-review" class="review--view">Подробнее</a>
 								</div>
 							</div>
 						</div>
@@ -298,7 +586,7 @@
 								<div class="review--title">Валор Дукалис</div>
 								<div class="review--shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 								<div class="review--button-wrap">
-									<a href="#" class="review--view">Подробнее</a>
+									<a href="#full-review" class="review--view">Подробнее</a>
 								</div>
 							</div>
 						</div>
@@ -307,6 +595,80 @@
 			</section>
 			<section class="section form">
 				<!--form-->
+				<div class="container">
+					<div class="section--title">Закажите доставку</div>
+					<div class="order--form">
+						<form class="order--form-tag" id="order-form">
+							<div class="order--form-col">
+								<div class="order--form-row order--form-row-double">
+									<label class="order--form-block">
+										<div class="order--form-label">Имя</div>
+										<input type="text" class="order--form-input" name="name" placeholder>
+									</label>
+									<label class="order--form-block">
+										<div class="order--form-label">Телефон</div>
+										<input type="text" class="order--form-input phone-mask" name="phone" placeholder>
+									</label>
+								</div>
+								<div class="order--form-row">
+									<label class="order--form-block">
+										<div class="order--form-label">Улица</div>
+										<input type="text" class="order--form-input" name="street" placeholder>
+									</label>									
+								</div>
+								<div class="order--form-row order--form-row-quatro">
+									<label class="order--form-block">
+										<div class="order--form-label">Дом</div>
+										<input type="text" class="order--form-input" name="home" placeholder>
+									</label>
+									<label class="order--form-block">
+										<div class="order--form-label">Корпус</div>
+										<input type="text" class="order--form-input" name="part" placeholder>
+									</label>
+									<label class="order--form-block">
+										<div class="order--form-label">Квартира</div>
+										<input type="text" class="order--form-input" name="appt" placeholder>
+									</label>
+									<label class="order--form-block">
+										<div class="order--form-label">Этаж</div>
+										<input type="text" class="order--form-input" name="floor" placeholder>
+									</label>
+								</div>
+							</div>
+							<div class="order--form-col">
+								<div class="order--form-row">
+									<label class="order--form-block">
+										<div class="order--form-label">Комментарий</div>
+										<textarea name="comment" id="comment" class="order--form-input order--form-textarea"></textarea>
+									</label>
+								</div>
+								<div class="order--form-row">
+									<label class="order--form-radio">
+										<input type="radio" class="order--form-radio-input" name="payment">
+										<div class="order--form-radio-fake"></div>
+										<div class="order--form-radio-title">Потребуется сдача</div>
+									</label>
+									<label class="order--form-radio">
+										<input type="radio" class="order--form-radio-input" name="payment">
+										<div class="order--form-radio-fake"></div>
+										<div class="order--form-radio-title">Оплата по карте</div>
+									</label>
+								</div>
+								<div class="order--form-row">
+									<label class="order--form-checkbox order--form-radio">
+										<input type="checkbox" class="order--form-radio-input" name="callback">
+										<div class="order--form-radio-fake"></div>
+										<div class="order--form-radio-title">Не перезванивать</div>
+									</label>
+								</div>
+								<div class="order__form-row">
+                  <input class="order--form-button" name="" type="submit" value="Заказать">
+                	<input class="order--form-button order--form-button-reset" name="" type="reset" value="Очистить">
+                </div>
+							</div>
+						</form>
+					</div>
+				</div>
 			</section>
 			<section class="section contacts">
 				<!--contacts-->
@@ -407,8 +769,28 @@
 				</footer>
 			</section>
 		</div>
-	<div>
+	</div>
+	<ul class="fixed-menu">
+		<li class="fixed-menu--item fixed-menu-active"><a href="0" class="fixed-menu--link"></a></li>
+		<li class="fixed-menu--item"><a href="1" class="fixed-menu--link"></a></li>
+		<li class="fixed-menu--item"><a href="2" class="fixed-menu--link"></a></li>
+		<li class="fixed-menu--item"><a href="3" class="fixed-menu--link"></a></li>
+		<li class="fixed-menu--item"><a href="4" class="fixed-menu--link"></a></li>
+		<li class="fixed-menu--item"><a href="5" class="fixed-menu--link"></a></li>
+		<li class="fixed-menu--item"><a href="6" class="fixed-menu--link"></a></li>
+		<li class="fixed-menu--item"><a href="7" class="fixed-menu--link"></a></li>
+	</ul>
+	<div class="full-review popup" id="full-review">
+		<div class="full-review--title">Костя Спилберг</div>
+		<div class="full-review--content">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, rem qui est nobis consectetur nisi molestiae ullam voluptate, rerum quia doloremque nemo, possimus excepturi culpa odit repudiandae. Quam, fugit, corporis.
+		</div>
+		<div class="full-review--close"><img src="img/svg/close.svg" alt="closebutton"></div>
+	</div>
 </body>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery.inputmask/dist/jquery.inputmask.bundle.js"></script>
+<script src="bower_components/fancybox/source/jquery.fancybox.js"></script>
+<script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 <script src="js/automate.js"></script>
 </html>

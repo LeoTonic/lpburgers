@@ -6,6 +6,7 @@ $orange: #e45028;
 $yellow: #f9b43b;
 $black: #2f3234;
 $red: #e35028;
+$dirty-white: #d1cfcb;
 $white: #fff;
 
 // dimensions
@@ -77,6 +78,9 @@ footer {
 		&-black {
 			color: $black;
 		}
+		&-white {
+			color: $white;
+		}
 	}
 	
 	&--desc {
@@ -93,12 +97,26 @@ footer {
 	min-width: $container-width + 20px;
 	min-height: 100%;
 	overflow: hidden;
+	position: relative;
+}
+
+.maincontent {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: 1s;
 }
 
 .container {
 	position: relative;
 	width: $container-width;
 	margin: 0 auto;
+	&:before {
+		content: "";
+		display: table;
+	}
 	&:after {
 		@extend .clearfix;
 	}
@@ -115,6 +133,104 @@ footer {
 	text-decoration: none;
 	border-radius: 5px;
 	font-weight: 600;
+	padding: 9px 16px;
+}
+
+.fixed-menu {
+	position: fixed;
+	top: 90px;
+	right: 40px;
+
+	&-active {
+		.fixed-menu--link:before {
+			width: 14px;
+			height: 14px;
+			opacity: 1;
+		}
+	}
+
+	&--item {
+		margin-bottom: 5px;
+	}
+
+	&--link {
+		width: 17px;
+		height: 16px;
+		display: block;
+		position: relative;
+		&:after,
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+		}
+		&:after {
+			width: 6px;
+			height: 6px;
+			background: $white;
+		}
+		&:before {
+			width: 0;
+			height: 0;
+			border-radius: 50%;
+			border: 1px solid $white;
+			opacity: 0;
+			transition: .3s;
+		}
+		&:hover {
+			&:before {
+				width: 14px;
+				height: 14px;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.popup {
+	display: none;
+}
+
+.full-review {
+  padding: 25px 20px;
+  position: relative;
+
+	&--title {
+	  font-family: gagalin;
+	  font-size: 14px;
+  	text-transform: uppercase;
+  	margin-bottom: 25px;
+		font-weight: 400;
+	}
+
+	&--content {
+		font-size: 14px;
+		font-family: ubuntu;
+		font-weight: 100;
+	}
+
+	&--close {
+		width: 15px;
+		height: 15px;
+		display: block;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		opacity: .7;
+		transition: .3s;
+		cursor: pointer;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+		&:hover {
+			opacity: 1;
+		}
+	} 
 }
 
 @import 'scss_modules/01-hero';

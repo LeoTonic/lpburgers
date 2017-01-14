@@ -2,4 +2,200 @@
   background-image: -moz-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
   background-image: -webkit-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
   background-image: -ms-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+
+  &--container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.burger-slider {
+  position: relative;
+  &--container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+  &--btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    &-next {
+      right: -20px;
+      transform: rotate(-90deg);
+    }
+    &-prev {
+      left: -20px;
+      transform: rotate(90deg);
+    }
+  }
+
+  &--left {
+    float: left;
+    width: 50%;
+    padding-top: 95px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  &--right {
+    float: left;
+    width: 50%;
+    .section--title {
+      line-height: 1.1em;
+      margin-bottom: 15px;
+    }
+  }
+
+  &--list {
+    white-space: nowrap;
+    display: block;
+    position: absolute;
+    top: 0;
+    font-size: 0;
+    left: 0%;
+    z-index: 1;
+  }
+
+  &--item {
+    position: relative;
+    white-space: normal;
+    display: inline-block;
+    width: $container-width;
+    padding-bottom: 85px;
+    &:after {
+      @extend .clearfix;
+    }
+  }
+
+  &--ingredients {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: rgba(227,80,40,0.4);
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    transition: .3s;
+    z-index: 10;
+    &:hover {
+      background: $red;
+      .burger-slider--ingredients-popup {
+        left: 90px;
+        opacity: 1;
+      }
+    }
+    &-popup {
+      padding: 20px;
+      background: rgba(255,255,255,.9);
+      position: absolute;
+      width: 270px;
+      border-radius: 7px;
+      left: -9999px;
+      opacity: 0;
+      transition: opacity .3s;
+      z-index: 10;
+      color: $black;
+    }
+    &-icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &-icon-text {
+      color: $white;
+      font-size: 14px;
+      font-family: gagalin;
+      font-weight: 400;
+    }
+  }
+  &--weight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+    &-measure {
+      background: url(../img/svg/kkal.svg) 50% no-repeat;
+      width: 65px;
+      height: 60px;
+      position: relative;
+    }
+    &-amount {
+      position: absolute;
+      bottom: 8px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: $white;
+      font-size: 20px;
+      font-family: gagalin;
+      font-weight: 400;
+    }
+    &-title {
+      text-align: center;
+      font-size: 14px;
+      color: $white;
+      font-family: gagalin;
+      font-weight: 400;
+    }
+  }
+
+  &--text {
+    color: $white;
+    margin-bottom: 18px;
+    .text-block {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+  }
+
+  &--price {
+    display: inline-block;
+    vertical-align: middle;
+    color: $red;
+    font-family: gagalin;
+    font-weight: 400;
+    &-amount,
+    &-measure {
+      display: inline-block;
+      vertical-align: bottom;
+      line-height: 1;
+    }
+
+    &-amount {
+      font-size: 72px;
+    }
+    &-measure {
+      font-size: 30px;
+    }
+  }
+
+  &--buy {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 32px;
+  }
+}
+
+.ingredients--table {
+  width: 100%;
+  font-size: 14px;
+
+  &-cell {
+    vertical-align: middle;
+    padding: 8px 0;
+
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
 }
