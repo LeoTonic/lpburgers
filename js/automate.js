@@ -164,4 +164,44 @@ $(function() {
 		e.preventDefault();
 		$.fancybox.close();
 	});
-})
+
+});
+
+// yandex maps
+$(function() {
+	ymaps.ready(init);
+	var myMap;
+
+	function init(){     
+		myMap = new ymaps.Map("map", {
+			center: [56.830143359478626,60.605890148525724],
+			zoom: 12,
+			controls: []
+		});
+		myMap.behaviors.disable('scrollZoom');
+
+		var coords = [
+	    [56.840683467194154,60.59808838189909],
+			[56.84496329592797,60.70265971210787],
+			[56.85991381212987,60.56671067797006]
+		],
+    myCollection = new ymaps.GeoObjectCollection({}, {
+       iconLayout: 'default#image',
+			 iconImageHref: 'img/svg/map-marker.svg',
+			 iconImageSize: [46, 57],
+			 iconImageOffset: [-26, -52],
+       draggable: false
+    });
+
+		for (var i = 0; i < coords.length; i++) {
+				myCollection.add(new ymaps.Placemark(coords[i]));
+		}
+		myMap.geoObjects.add(myCollection);
+	}
+});
+
+$(function() {
+	$('#order-form').on('submit', function(e) {
+		console.log("submit");
+	});
+});

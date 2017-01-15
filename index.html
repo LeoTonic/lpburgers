@@ -593,45 +593,45 @@
 					</li>
 				</ul>
 			</section>
-			<section class="section form">
+			<section class="section order">
 				<!--form-->
 				<div class="container">
 					<div class="section--title">Закажите доставку</div>
 					<div class="order--form">
-						<form class="order--form-tag" id="order-form">
+						<form id="order-form">
 							<div class="order--form-col">
 								<div class="order--form-row order--form-row-double">
 									<label class="order--form-block">
 										<div class="order--form-label">Имя</div>
-										<input type="text" class="order--form-input" name="name" placeholder>
+										<input type="text" class="order--form-input" name="name" placeholder="">
 									</label>
 									<label class="order--form-block">
 										<div class="order--form-label">Телефон</div>
-										<input type="text" class="order--form-input phone-mask" name="phone" placeholder>
+										<input type="text" class="order--form-input phone-mask" name="phone" placeholder="">
 									</label>
 								</div>
 								<div class="order--form-row">
 									<label class="order--form-block">
 										<div class="order--form-label">Улица</div>
-										<input type="text" class="order--form-input" name="street" placeholder>
+										<input type="text" class="order--form-input" name="street" placeholder="">
 									</label>									
 								</div>
 								<div class="order--form-row order--form-row-quatro">
 									<label class="order--form-block">
 										<div class="order--form-label">Дом</div>
-										<input type="text" class="order--form-input" name="home" placeholder>
+										<input type="text" class="order--form-input" name="home" placeholder="">
 									</label>
 									<label class="order--form-block">
 										<div class="order--form-label">Корпус</div>
-										<input type="text" class="order--form-input" name="part" placeholder>
+										<input type="text" class="order--form-input" name="part" placeholder="">
 									</label>
 									<label class="order--form-block">
 										<div class="order--form-label">Квартира</div>
-										<input type="text" class="order--form-input" name="appt" placeholder>
+										<input type="text" class="order--form-input" name="appt" placeholder="">
 									</label>
 									<label class="order--form-block">
 										<div class="order--form-label">Этаж</div>
-										<input type="text" class="order--form-input" name="floor" placeholder>
+										<input type="text" class="order--form-input" name="floor" placeholder="">
 									</label>
 								</div>
 							</div>
@@ -672,12 +672,12 @@
 			</section>
 			<section class="section contacts">
 				<!--contacts-->
-				<div class="yandex-map"></div>
+				<div class="yandex-map" id="map"></div>
 				<footer class="footer">
 					<div class="container">
 						<div class="footer--col">
-							<div class="footer--address">г. Санкт-Петербург, ул. Бабушкина, д.12/1, 15</div>
-							<a href="#" class="footer--phone">+7 (812) 377-13-77</a>
+							<div class="footer--address">г. Екатеринбург, ул. 8 марта, д.1 (адрес является вымышленным)</div>
+							<a href="#" class="footer--phone">+7 (343) 999-99-99 (телефон является вымышленным)</a>
 						</div>
 						<div class="footer--col footer--col-right">
 							<ul class="socials">
@@ -792,5 +792,6 @@
 <script src="bower_components/jquery.inputmask/dist/jquery.inputmask.bundle.js"></script>
 <script src="bower_components/fancybox/source/jquery.fancybox.js"></script>
 <script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="js/automate.js"></script>
 </html>
