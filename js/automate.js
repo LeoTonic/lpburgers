@@ -62,7 +62,7 @@ $(function() {
 	});
 	// menu accordeon outside
 	$(document).on('click', function(e) {
-		e.preventDefault();
+		//e.preventDefault();
 		var $this = $(e.target);
 		if (!$this.closest('.menu-acco').length) {
 			$('.menu-acco--content').css({
