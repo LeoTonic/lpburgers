@@ -233,6 +233,22 @@ footer {
 	} 
 }
 
+.status-popup {
+	width: 240px;
+	&--inner {
+		padding: 20px;
+		text-align: center;
+	}
+	&--message {
+		margin-bottom: 20px;
+		font-size: 14px;
+	}
+}
+
+.error-message {
+	color: $red;
+} 
+
 @import 'scss_modules/01-hero';
 @import 'scss_modules/02-we';
 @import 'scss_modules/03-burgers';
