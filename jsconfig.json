@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES5"
+  },
+	"typeAcquisition": {
+  	"include": [
+    	"lodash"
+		   ]
+	},
+  "exclude": [
+    "node_modules"
+  ]
+}
